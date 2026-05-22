@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+  ================================================================
+  AquaFarm Nigeria — Premium Aquaculture Website v3.0
+  Refined · Modern · Dark Mode · CSS Animations · SEO-Optimised
+  ================================================================
+-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── Primary SEO ───────────────────────────────────────── -->
+  <title>AquaFarm Nigeria | Professional Fish Farming &amp; Aquaculture Solutions</title>
+  <meta name="description"
+        content="Nigeria's leading fish farming company since 2009. Expert catfish and tilapia pond construction, fingerling supply, farmer training, and market linkage across all 36 states." />
+  <meta name="keywords"
+        content="fish farming Nigeria, catfish farming, tilapia farming, aquaculture Nigeria, fish pond construction, fish farm consultancy, fingerlings Nigeria, aquaculture training" />
+  <meta name="author"  content="AquaFarm Nigeria" />
+  <meta name="robots"  content="index, follow" />
+  <link rel="canonical" href="https://www.aquafarmnigeria.com/" />
+  <meta name="theme-color" content="#0a1628" />
+
+  <!-- ── Open Graph ────────────────────────────────────────── -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.aquafarmnigeria.com/" />
+  <meta property="og:title"       content="AquaFarm Nigeria | Professional Fish Farming Solutions" />
+  <meta property="og:description" content="Nigeria's most trusted aquaculture partner. Pond construction, fingerlings, training and market linkage since 2009." />
+  <meta property="og:image"       content="https://www.aquafarmnigeria.com/og-image.jpg" />
+  <meta property="og:image:alt"   content="AquaFarm Nigeria — fish pond with healthy catfish stock in Delta State" />
+  <meta property="og:locale"      content="en_NG" />
+  <meta property="og:site_name"   content="AquaFarm Nigeria" />
+
+  <!-- ── Twitter / X Card ──────────────────────────────────── -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@AquaFarmNG" />
+  <meta name="twitter:title"       content="AquaFarm Nigeria | Professional Fish Farming" />
+  <meta name="twitter:description" content="Sustainable aquaculture and fish farming solutions across Nigeria." />
+  <meta name="twitter:image"       content="https://www.aquafarmnigeria.com/og-image.jpg" />
+  <meta name="twitter:image:alt"   content="AquaFarm Nigeria premium aquaculture facility" />
+
+  <!-- ── Geo targeting ──────────────────────────────────────── -->
+  <meta name="geo.region"    content="NG" />
+  <meta name="geo.placename" content="Lagos, Nigeria" />
+  <meta name="language"      content="English" />
+
+  <!-- ── Structured Data: LocalBusiness + Organization (JSON-LD) ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.aquafarmnigeria.com/#business",
+        "name": "AquaFarm Nigeria",
+        "alternateName": "Greenamyte Naturals Nigeria",
+        "description": "Nigeria's leading fish farming and aquaculture solutions company since 2009.",
+        "url": "https://www.aquafarmnigeria.com",
+        "logo": "https://www.aquafarmnigeria.com/logo.png",
+        "image": "https://www.aquafarmnigeria.com/og-image.jpg",
+        "telephone": "+234-708-389-4435",
+        "email": "hello@aquafarmnigeria.com",
+        "foundingDate": "2009",
+        "numberOfEmployees": {"@type": "QuantitativeValue", "value": 50},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "24 Aqua Close",
+          "addressLocality": "Victoria Island",
+          "addressRegion": "Lagos",
+          "postalCode": "101241",
+          "addressCountry": "NG"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 6.4281,
+          "longitude": 3.4219
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Nigeria"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/AquaFarmNigeria",
+          "https://www.instagram.com/aquafarmnigeria",
+          "https://twitter.com/AquaFarmNG"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.aquafarmnigeria.com/#website",
+        "url": "https://www.aquafarmnigeria.com",
+        "name": "AquaFarm Nigeria",
+        "description": "Professional fish farming and aquaculture solutions across Nigeria"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ── Fonts ─────────────────────────────────────── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+        rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Skip to main content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Dark Mode Toggle -->
+  <input type="checkbox" id="dark-toggle" class="dark-toggle-input" aria-label="Toggle dark mode" />
+  <label for="dark-toggle" class="dark-toggle-btn" title="Toggle dark / light mode" aria-hidden="true">
+    <span class="toggle-track">
+      <span class="toggle-icon sun" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </span>
+      <span class="toggle-icon moon" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </span>
+      <span class="toggle-thumb"></span>
+    </span>
+  </label>
+
+  <!-- ====================================================
+       NAVBAR
+  ==================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo" aria-label="AquaFarm Nigeria — go to homepage">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </span>
+        <span class="logo-text">Greenamyte <strong>Naturals</strong></span>
+      </a>
+
+      <!-- Mobile hamburger (CSS-only) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+      <label for="menu-toggle" class="hamburger" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav-links" role="navigation" aria-label="Primary navigation">
+        <a href="#home"><strong>Home</strong></a>
+        <a href="#about"><strong>About</strong></a>
+        <a href="blog.html"><strong>Blog</strong></a>
+        <a href="#services"><strong>Services</strong></a>
+        <a href="#why-us"><strong>Why Us</strong></a>
+        <a href="#contact"><strong>Contacts</strong></a>
+        <a href="#contact" class="nav-cta">
+          Get Started
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ====================================================
+       MAIN CONTENT
+  ==================================================== -->
+  <main id="main-content">
+
+    <!-- ================================================
+         HERO
+    ================================================ -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="noise-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+
+        <div class="hero-text">
+          <span class="hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            Nigeria's #1 Aquaculture Partner
+          </span>
+
+          <h1 id="hero-heading">
+            Grow More Fish.<br />
+            <em>Grow More Wealth.</em>
+          </h1>
+
+          <p class="hero-sub">
+            We help Nigerian farmers and entrepreneurs build profitable, sustainable fish farms —
+            from pond construction to harvest and beyond.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#services" class="btn btn-primary">
+              Explore Services
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Talk to an Expert</a>
+          </div>
+
+          <dl class="hero-stats" aria-label="Company statistics">
+            <div class="stat">
+              <dd class="stat-num">1,200<sup>+</sup></dd>
+              <dt class="stat-label">Farms Built</dt>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <dd class="stat-num">36</dd>
+              <dt class="stat-label">States Covered</dt>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <dd class="stat-num">15<sup>+</sup></dd>
+              <dt class="stat-label">Years Experience</dt>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="hero-image" role="img" aria-label="Live catfish farm dashboard showing a pond in Delta State with 98% survival rate, 6-month harvest cycle, and 1.2kg average fish weight">
+          <div class="pond-card">
+            <div class="pond-header">
+              <span class="pond-dot" aria-hidden="true"></span>
+              <span class="pond-status">Live Farm · Delta State</span>
+              <span class="pond-signal" aria-hidden="true"></span>
+            </div>
+            <div class="pond-visual" aria-hidden="true">
+              <div class="water">
+                <div class="wave w1"></div>
+                <div class="wave w2"></div>
+                <span class="fish f1">🐟</span>
+                <span class="fish f2">🐠</span>
+                <span class="fish f3">🐟</span>
+                <span class="fish f4">🐡</span>
+                <span class="fish f5">🐠</span>
+              </div>
+            </div>
+            <div class="pond-metrics">
+              <div class="metric">
+                <span class="metric-val">98%</span>
+                <span class="metric-label">Survival</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">6mo</span>
+                <span class="metric-label">Harvest</span>
+              </div>
+              <div class="metric">
+                <span class="metric-val">1.2kg</span>
+                <span class="metric-label">Avg. Weight</span>
+              </div>
+            </div>
+          </div>
+          <figcaption class="sr-only">
+            A live catfish pond monitoring dashboard for a farm in Delta State, Nigeria.
+            Key metrics: 98% fish survival rate, 6-month harvest cycle, 1.2kg average fish weight.
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         ABOUT
+    ================================================ -->
+    <section id="about" class="about section-pad" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-visual" aria-hidden="true">
+            <div class="about-card">
+              <div class="about-card-body">
+                <div class="about-icon-wrap">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke-width="1"/>
+                  </svg>
+                </div>
+                <p class="about-card-title">Sustainable Ponds</p>
+                <p class="about-card-sub">Earthen · Concrete · Tarpaulin</p>
+              </div>
+              <div class="about-float-badge">
+                <strong>Est. 2009</strong>
+                <span>Victoria Island, Lagos</span>
+              </div>
+              <span class="about-ring r1" aria-hidden="true"></span>
+              <span class="about-ring r2" aria-hidden="true"></span>
+              <span class="about-ring r3" aria-hidden="true"></span>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <span class="section-eyebrow">About AquaFarm Nigeria</span>
+
+            <h2 id="about-heading">
+              Feeding Nigeria,<br />
+              <span class="accent-text">One Pond at a Time</span>
+            </h2>
+
+            <p class="lead">
+              Founded in 2009, AquaFarm Nigeria has been at the forefront of aquaculture development
+              across the country, working with smallholder farmers, cooperatives, and commercial
+              investors to build profitable fish farming businesses.
+            </p>
+            <p>
+              Nigeria is the largest consumer of fish in sub-Saharan Africa, yet over 60% of demand
+              is met by imports. We are changing that — empowering local farmers with world-class
+              techniques, quality fingerlings, and ongoing expert support.
+            </p>
+
+            <ul class="values-list" aria-label="Our core values">
+              <li class="value-item">
+                <span class="value-check" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <div>
+                  <h3 class="value-title">Sustainability First</h3>
+                  <p>Eco-friendly pond designs that preserve local ecosystems and water tables.</p>
+                </div>
+              </li>
+              <li class="value-item">
+                <span class="value-check" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <div>
+                  <h3 class="value-title">Knowledge Transfer</h3>
+                  <p>We don't just build farms — we train farmers for long-term independence.</p>
+                </div>
+              </li>
+              <li class="value-item">
+                <span class="value-check" aria-hidden="true">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                </span>
+                <div>
+                  <h3 class="value-title">End-to-End Support</h3>
+                  <p>From site selection and pond construction to harvest and market linkage.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         SERVICES
+    ================================================ -->
+    <section id="services" class="services section-pad" aria-labelledby="services-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">What We Offer</span>
+          <h2 id="services-heading">Our Core Services</h2>
+          <p class="section-sub">Everything you need to start and scale a successful fish farm in Nigeria.</p>
+        </header>
+
+        <ul class="services-grid" role="list">
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-1">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M6 8h12M6 11h8"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">01</span>
+              </div>
+              <h3 id="svc-1">Pond Construction</h3>
+              <p>We design and build earthen, concrete, and tarpaulin ponds tailored to your land, budget, and fish species. Proper engineering ensures maximum yield and longevity.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about pond construction">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-2">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">02</span>
+              </div>
+              <h3 id="svc-2">Fingerling Supply</h3>
+              <p>Quality catfish and tilapia fingerlings from certified hatcheries. Fast-growing, disease-resistant strains carefully selected for Nigerian climate conditions.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about fingerling supply">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-3">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">03</span>
+              </div>
+              <h3 id="svc-3">Training &amp; Consultancy</h3>
+              <p>Hands-on training for beginners and advanced farmers. Topics cover water management, feeding regimes, disease control, and harvest planning.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about training and consultancy">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-4">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="4"/><path d="M18 4v4M16 6h4"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">04</span>
+              </div>
+              <h3 id="svc-4">Feed &amp; Nutrition</h3>
+              <p>Premium fish feed with optimal protein ratios. Sourced locally where possible to reduce costs and support the Nigerian agricultural value chain.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about feed and nutrition">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-5">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">05</span>
+              </div>
+              <h3 id="svc-5">Water Quality Testing</h3>
+              <p>On-site laboratory testing for pH, ammonia, dissolved oxygen, and other critical parameters. Healthy water = healthy fish = healthy profits.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about water quality testing">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+          <li>
+            <article class="service-card" aria-labelledby="svc-6">
+              <div class="card-top">
+                <span class="card-icon" aria-hidden="true">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                </span>
+                <span class="card-num" aria-hidden="true">06</span>
+              </div>
+              <h3 id="svc-6">Market Linkage</h3>
+              <p>We connect farmers to hotels, restaurants, markets, and processors across Nigeria, ensuring you get the best price for your harvest.</p>
+              <a href="#contact" class="card-link" aria-label="Enquire about market linkage">
+                Enquire now
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         WHY US
+    ================================================ -->
+    <section id="why-us" class="why-us section-pad" aria-labelledby="why-heading">
+      <div class="container">
+
+        <header class="section-header light">
+          <span class="section-eyebrow inv">Why Choose Us</span>
+          <h2 id="why-heading">Built for Nigerian Conditions</h2>
+          <p class="section-sub">We understand the unique challenges of Nigerian aquaculture — and we have the solutions.</p>
+        </header>
+
+        <dl class="impact-grid" aria-label="Our impact in numbers">
+          <div class="impact-card">
+            <dd class="impact-num">1,200<sup>+</sup></dd>
+            <dt class="impact-label">Ponds Constructed</dt>
+          </div>
+          <div class="impact-card">
+            <dd class="impact-num">8,500<sup>+</sup></dd>
+            <dt class="impact-label">Farmers Trained</dt>
+          </div>
+          <div class="impact-card">
+            <dd class="impact-num">₦2.1B<sup>+</sup></dd>
+            <dt class="impact-label">Revenue for Clients</dt>
+          </div>
+          <div class="impact-card">
+            <dd class="impact-num">36</dd>
+            <dt class="impact-label">States &amp; FCT Reached</dt>
+          </div>
+        </dl>
+
+        <ul class="features-grid" role="list">
+          <li class="feature">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </span>
+            <h3 class="feat-title">Local Expertise</h3>
+            <p>Deep knowledge of Nigerian soil types, climate zones, and fish market dynamics.</p>
+          </li>
+          <li class="feature">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <h3 class="feat-title">Fast Setup</h3>
+            <p>From site visit to stocking in as little as 3 weeks for standard pond sizes.</p>
+          </li>
+          <li class="feature">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.8 16z"/></svg>
+            </span>
+            <h3 class="feat-title">24/7 Support</h3>
+            <p>Our field officers and WhatsApp support team are always available for urgent needs.</p>
+          </li>
+          <li class="feature">
+            <span class="feat-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </span>
+            <h3 class="feat-title">Affordable Packages</h3>
+            <p>Flexible pricing with starter packages for small-scale farmers and cooperatives.</p>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================
+         CONTACT
+    ================================================ -->
+    <section id="contact" class="contact section-pad" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-heading">Start Your Fish Farm Today</h2>
+          <p class="section-sub">Fill the form and our team will reach out within 24 hours.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <address class="contact-info" aria-label="AquaFarm Nigeria contact details">
+            <h3 class="contact-info-title">Our Office</h3>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div>
+                  <strong>Address</strong>
+                  <p>24 Aqua Close, Victoria Island,<br />Lagos, Nigeria</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.8 16z"/></svg>
+                </span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+2347083894435">+234-708-389-4435</a></p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:hello@aquafarmnigeria.com">hello@aquafarmnigeria.com</a></p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div>
+                  <strong>Business Hours</strong>
+                  <p>Mon – Sat: 8:00 am – 6:00 pm WAT</p>
+                </div>
+              </li>
+            </ul>
+            <div class="contact-trust">
+              <span class="trust-dot" aria-hidden="true"></span>
+              We respond within 24 hours
+            </div>
+          </address>
+
+          <div class="form-card">
+            <form class="contact-form" aria-label="Contact enquiry form" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullname">Full Name <span aria-hidden="true" class="required-star">*</span></label>
+                  <input type="text" id="fullname" name="fullname"
+                         placeholder="e.g. Chukwuemeka Obi"
+                         autocomplete="name" required aria-required="true" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone <span aria-hidden="true" class="required-star">*</span></label>
+                  <input type="tel" id="phone" name="phone"
+                         placeholder="+234 800 000 0000"
+                         autocomplete="tel" required aria-required="true" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true" class="required-star">*</span></label>
+                <input type="email" id="email" name="email"
+                       placeholder="you@example.com"
+                       autocomplete="email" required aria-required="true" />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service of Interest</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Select a service…</option>
+                  <option value="pond">Pond Construction</option>
+                  <option value="fingerlings">Fingerling Supply</option>
+                  <option value="training">Training &amp; Consultancy</option>
+                  <option value="feed">Feed &amp; Nutrition</option>
+                  <option value="water">Water Quality Testing</option>
+                  <option value="market">Market Linkage</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4"
+                          placeholder="Tell us about your farm or project…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary full-width">
+                Send Message
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top-line" aria-hidden="true"></div>
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="AquaFarm Nigeria home">
+          <span class="logo-mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </span>
+          <span class="logo-text">AquaFarm <strong>Nigeria</strong></span>
+        </a>
+        <p>Nigeria's most trusted aquaculture partner since 2009. We grow fish, we grow futures.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" aria-label="AquaFarm Nigeria on Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="AquaFarm Nigeria on Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="AquaFarm Nigeria on Twitter / X">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <nav class="footer-links" aria-label="Our services">
+        <h4>Services</h4>
+        <a href="#services">Pond Construction</a>
+        <a href="#services">Fingerling Supply</a>
+        <a href="#services">Training</a>
+        <a href="#services">Feed &amp; Nutrition</a>
+        <a href="#services">Market Linkage</a>
+      </nav>
+
+      <address class="footer-contact" aria-label="Contact details">
+        <h4>Contact</h4>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Victoria Island, Lagos
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72c.127.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.79a16 16 0 0 0 6 6l1.06-1.06a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.8 16z"/></svg>
+          <a href="tel:+2347083894435">+234 708 389 4435</a>
+        </p>
+        <p>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:hello@aquafarmnigeria.com">hello@aquafarmnigeria.com</a>
+        </p>
+      </address>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Greenamyte Naturals Nigeria Ltd. All rights reserved.</p>
+        <p>Crafted with care for Nigerian aquaculture.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
